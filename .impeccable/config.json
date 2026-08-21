@@ -1,0 +1,25 @@
+{
+  "buildPath": "comp",
+  "formsEndpoint": "https://script.google.com/macros/s/AKfycbyVx5P0FIvt1DhnynOUi4TGGg_0mdWdDnOsTeGfPnXx0uM3hTidiFwm01E1E09ajR6XsQ/exec",
+  "detector": {
+    "ignoreRules": [],
+    "ignoreFiles": [],
+    "ignoreValues": [
+      {
+        "rule": "codex-grid-background",
+        "value": "*",
+        "files": [
+          "src/style.css"
+        ],
+        "createdAt": "2026-08-18T11:05:37.653Z",
+        "reason": "domain-appropriate: chalk snap-line / tracing-wheel dashed rule motif from the committed pattern-drafting direction, applied to a single 1px hr section-divider, not a decorative background grid"
+      },
+      {
+        "rule": "codex-grid-background",
+        "value": "src\\style.css;.snapline",
+        "createdAt": "2026-08-19T11:12:10.255Z",
+        "reason": "user confirmed: literal chalk snap-line/tracing-wheel motif for a tailoring-world direction, not a decorative grid"
+      }
+    ]
+  }
+}
