@@ -127,7 +127,7 @@ p { margin: 0; }
   flex-wrap: wrap;
 }
 .masthead__logo img {
-  height: 34px;
+  height: 48px;
   width: auto;
 }
 .masthead__contact {
@@ -165,8 +165,8 @@ p { margin: 0; }
 
 .rack {
   position: sticky;
-  top: 65px;
-  height: calc(100vh - 65px);
+  top: 79px;
+  height: calc(100vh - 79px);
   overflow-y: auto;
   border-right: 1px solid var(--line);
   padding-block: 1.5rem;
@@ -452,7 +452,7 @@ p { margin: 0; }
    Forms — "measurements taken"
    ============================================================ */
 .forms {
-  scroll-margin-top: 90px;
+  scroll-margin-top: 104px;
 }
 .form-tabs {
   display: inline-flex;
@@ -764,6 +764,13 @@ p { margin: 0; }
 .legal {
   max-width: 46rem;
   padding-block: clamp(2.5rem, 6vw, 4.5rem) 4rem;
+}
+.contact__lockup {
+  margin-bottom: 2.25rem;
+}
+.contact__lockup img {
+  width: min(420px, 100%);
+  height: auto;
 }
 .legal__eyebrow {
   font-size: 0.74rem;
