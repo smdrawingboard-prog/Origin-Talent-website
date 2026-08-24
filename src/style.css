@@ -130,7 +130,7 @@ p { margin: 0; }
   animation: splash-hide 1.5s var(--ease-out-expo) forwards;
 }
 .splash__logo {
-  width: min(240px, 55vw);
+  width: min(340px, 65vw);
   height: auto;
   opacity: 0;
   animation: splash-logo 1.5s var(--ease-out-expo) forwards;
@@ -169,8 +169,15 @@ p { margin: 0; }
   flex-wrap: wrap;
 }
 .masthead__logo img {
-  height: 72px;
+  height: clamp(40px, 9vw, 76px);
   width: auto;
+}
+
+.footer-logo {
+  height: 44px;
+  width: auto;
+  display: block;
+  margin-bottom: 0.9rem;
 }
 .masthead__contact {
   display: flex;
@@ -207,8 +214,8 @@ p { margin: 0; }
 
 .rack {
   position: sticky;
-  top: 103px;
-  height: calc(100vh - 103px);
+  top: 107px;
+  height: calc(100vh - 107px);
   overflow-y: auto;
   border-right: 1px solid var(--line);
   padding-block: 1.5rem;
@@ -358,7 +365,6 @@ p { margin: 0; }
   object-fit: cover;
   width: 100%;
   height: 100%;
-  filter: grayscale(1) contrast(1.02);
 }
 
 @media (max-width: 720px) {
@@ -411,7 +417,6 @@ p { margin: 0; }
   width: 100%;
   aspect-ratio: 4 / 3;
   object-fit: cover;
-  filter: grayscale(1) contrast(1.03);
   border: 1px solid var(--line);
 }
 .category__tag {
@@ -506,7 +511,7 @@ p { margin: 0; }
    Forms — "measurements taken"
    ============================================================ */
 .forms {
-  scroll-margin-top: 128px;
+  scroll-margin-top: 132px;
 }
 .form-tabs {
   display: inline-flex;
