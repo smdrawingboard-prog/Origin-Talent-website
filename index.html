@@ -5,9 +5,19 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <title>Origin Talent — Exceptional People for Exceptional Homes</title>
 <meta name="description" content="Origin Talent sources, screens and places exceptional domestic and household staff for Johannesburg homes — au pairs, caregivers, house managers, night nurses, chauffeurs and more." />
+<script>
+  if (sessionStorage.getItem('ot-splash-seen')) {
+    document.documentElement.classList.add('no-splash');
+  } else {
+    sessionStorage.setItem('ot-splash-seen', '1');
+  }
+</script>
 <link rel="stylesheet" href="src/style.css" />
 </head>
 <body>
+<div class="splash" id="splash" aria-hidden="true">
+  <img class="splash__logo" src="assets/brand/origin-talent-black-transparent.png" alt="" width="220" height="66" />
+</div>
 <!--
 THESIS: Origin Talent measures a household once, precisely, and keeps a pattern
 book of the professionals fitted to it — refusing the staffing-agency default
