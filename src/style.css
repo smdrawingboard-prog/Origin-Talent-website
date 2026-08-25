@@ -830,8 +830,15 @@ p { margin: 0; }
   margin-bottom: 2.25rem;
 }
 .contact__lockup img {
-  width: min(420px, 100%);
+  width: min(300px, 100%);
   height: auto;
+  margin-bottom: 0.85rem;
+}
+.contact__lockup p {
+  font-size: 0.74rem;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: var(--ink-soft);
 }
 .legal__eyebrow {
   font-size: 0.74rem;
