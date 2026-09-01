@@ -8,13 +8,27 @@ The live marketing site for Origin Talent, a Johannesburg domestic/household sta
 agency ("Exceptional People for Exceptional Homes"). Plain static HTML/CSS/JS — no
 build step, no framework, no package.json. Deployed as-is via GitHub Pages.
 
-Four pages, all hand-written HTML sharing the same masthead/footer markup and
+Fifteen pages, all hand-written HTML sharing the same masthead/footer markup and
 `src/style.css` / `src/main.js`:
 - `index.html` — the homepage: hero, ten staffing-category cards, the two lead forms
   (Client Staffing Enquiry / Candidate Application), a document-download section.
-- `contact.html`, `privacy.html`, `paia-manual.html` — secondary pages using the
-  `.legal` single-column "Read mode" layout (see DESIGN.md) instead of the homepage's
-  pattern-rack layout.
+- `contact.html`, `privacy.html`, `paia-manual.html`, `faq.html` — secondary pages
+  using the `.legal` single-column "Read mode" layout (see DESIGN.md) instead of the
+  homepage's pattern-rack layout.
+- `services/<slug>.html` — one page per staffing category (ten), also `.legal` layout.
+  Their "Start a Staffing Enquiry" CTAs link to `index.html?role=<Role>#enquire`;
+  `src/main.js` reads the `role` query param and pre-selects that role on the enquiry
+  form (values must match the `#c-role` `<option>` text exactly).
+
+**SEO infrastructure** (added 2026-09-01): every page carries a canonical URL, Open
+Graph meta, and JSON-LD (homepage: EmploymentAgency/LocalBusiness/Organization +
+WebSite + OfferCatalog; service pages: Service + BreadcrumbList; `faq.html`:
+FAQPage — its JSON-LD answers must stay in sync with the visible Q&A text).
+`robots.txt` and `sitemap.xml` live at the root — **a new page must be added to
+`sitemap.xml`** and its footer copied from an existing page. The `CNAME` file pins
+the GitHub Pages custom domain `origintalent.co.za`; canonical URLs all use
+`https://origintalent.co.za`. `GO-LIVE.md` documents the launch steps that live
+outside the repo (DNS, Search Console, Apps Script dashboard install).
 
 ## Running it locally
 

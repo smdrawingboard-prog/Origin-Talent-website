@@ -116,6 +116,19 @@ document.querySelectorAll('.category__link').forEach((link) => {
   });
 });
 
+// ---------- service-page handoff: ?role=X pre-selects the enquiry role ----------
+const roleParam = new URLSearchParams(window.location.search).get('role');
+if (roleParam) {
+  const roleSelect = document.getElementById('c-role');
+  if (roleSelect) {
+    const match = Array.from(roleSelect.options).find((opt) => opt.value === roleParam);
+    if (match) {
+      activateFormTab('enquire');
+      roleSelect.value = match.value;
+    }
+  }
+}
+
 // ---------- form submission ----------
 function wireForm(formEl, formType) {
   if (!formEl) return;

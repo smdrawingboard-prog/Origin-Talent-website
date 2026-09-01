@@ -5,6 +5,14 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <title>Origin Talent — Exceptional People for Exceptional Homes</title>
 <meta name="description" content="Origin Talent sources, screens and places exceptional domestic and household staff for Johannesburg homes — au pairs, caregivers, house managers, night nurses, chauffeurs and more." />
+<link rel="canonical" href="https://origintalent.co.za/" />
+<meta property="og:type" content="website" />
+<meta property="og:site_name" content="Origin Talent" />
+<meta property="og:title" content="Origin Talent — Exceptional People for Exceptional Homes" />
+<meta property="og:description" content="Origin Talent sources, screens and places exceptional domestic and household staff for Johannesburg homes — au pairs, caregivers, house managers, night nurses, chauffeurs and more." />
+<meta property="og:url" content="https://origintalent.co.za/" />
+<meta property="og:image" content="https://origintalent.co.za/assets/photography/brand/house-managers.png" />
+<meta property="og:locale" content="en_ZA" />
 <script>
   if (sessionStorage.getItem('ot-splash-seen')) {
     document.documentElement.classList.add('no-splash');
@@ -13,6 +21,60 @@
   }
 </script>
 <link rel="stylesheet" href="src/style.css" />
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": ["EmploymentAgency", "LocalBusiness", "Organization"],
+      "@id": "https://origintalent.co.za/#organization",
+      "name": "Origin Talent",
+      "legalName": "Origin Talent Agency (Pty) Ltd",
+      "slogan": "Exceptional People for Exceptional Homes",
+      "description": "Origin Talent is a domestic and household staffing recruitment agency in Johannesburg, sourcing, screening and placing exceptional people across ten household staffing specialties.",
+      "url": "https://origintalent.co.za/",
+      "logo": "https://origintalent.co.za/assets/brand/origin-talent-black-transparent.png",
+      "image": "https://origintalent.co.za/assets/photography/brand/house-managers.png",
+      "telephone": "+27 10 502 0105",
+      "email": "roger@origintalent.co.za",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "First Floor, Dainfern Square, Cnr Winnie Mandela & Broadacres Drive",
+        "addressLocality": "Dainfern, Johannesburg",
+        "addressRegion": "Gauteng",
+        "postalCode": "2191",
+        "addressCountry": "ZA"
+      },
+      "areaServed": { "@type": "City", "name": "Johannesburg" },
+      "knowsLanguage": "en",
+      "hasOfferCatalog": {
+        "@type": "OfferCatalog",
+        "name": "Household staffing specialties",
+        "itemListElement": [
+          { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Au Pair placement", "url": "https://origintalent.co.za/services/au-pair.html" } },
+          { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Caregiver placement", "url": "https://origintalent.co.za/services/caregivers.html" } },
+          { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "House Manager placement", "url": "https://origintalent.co.za/services/house-managers.html" } },
+          { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Night Nurse placement", "url": "https://origintalent.co.za/services/night-nurses.html" } },
+          { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Chauffeur placement", "url": "https://origintalent.co.za/services/chauffeurs.html" } },
+          { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Babysitter placement", "url": "https://origintalent.co.za/services/babysitters.html" } },
+          { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Personal Assistant placement", "url": "https://origintalent.co.za/services/personal-assistants.html" } },
+          { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Pet Care Specialist placement", "url": "https://origintalent.co.za/services/pet-care-specialists.html" } },
+          { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Private Chef placement", "url": "https://origintalent.co.za/services/private-chefs.html" } },
+          { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Tutor & Governess placement", "url": "https://origintalent.co.za/services/tutors-governesses.html" } }
+        ]
+      }
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://origintalent.co.za/#website",
+      "name": "Origin Talent",
+      "url": "https://origintalent.co.za/",
+      "inLanguage": "en-ZA",
+      "publisher": { "@id": "https://origintalent.co.za/#organization" }
+    }
+  ]
+}
+</script>
 </head>
 <body>
 <div class="splash" id="splash" aria-hidden="true">
@@ -111,7 +173,10 @@ provenance.
         <div class="category__body">
           <h3 class="category__name">Au Pair</h3>
           <p class="category__desc">We place experienced and caring Au Pairs who provide reliable childcare support while helping children learn, grow, and thrive in a nurturing environment. Our Au Pairs are carefully selected for their professionalism, responsibility, and genuine passion for working with children.</p>
-          <a class="category__link" href="#enquire">Enquire about an Au Pair &rarr;</a>
+          <div class="category__links">
+            <a class="category__link" href="#enquire">Enquire about an Au Pair &rarr;</a>
+            <a class="category__more" href="services/au-pair.html">More about Au Pairs &rarr;</a>
+          </div>
         </div>
       </article>
 
@@ -120,7 +185,10 @@ provenance.
         <div class="category__body">
           <h3 class="category__name">Caregivers</h3>
           <p class="category__desc">Our qualified Nurses and Caregivers provide compassionate care for seniors, individuals recovering from illness, and those requiring ongoing assistance. We match clients with professionals who deliver personalized care while maintaining dignity, comfort, and independence.</p>
-          <a class="category__link" href="#enquire">Enquire about a Caregiver &rarr;</a>
+          <div class="category__links">
+            <a class="category__link" href="#enquire">Enquire about a Caregiver &rarr;</a>
+            <a class="category__more" href="services/caregivers.html">More about Caregivers &rarr;</a>
+          </div>
         </div>
       </article>
 
@@ -129,7 +197,10 @@ provenance.
         <div class="category__body">
           <h3 class="category__name">House Managers</h3>
           <p class="category__desc">A well-managed home requires exceptional organization. Our House Managers oversee household operations, coordinate staff, manage schedules, supervise maintenance, and ensure your home runs efficiently every day.</p>
-          <a class="category__link" href="#enquire">Enquire about a House Manager &rarr;</a>
+          <div class="category__links">
+            <a class="category__link" href="#enquire">Enquire about a House Manager &rarr;</a>
+            <a class="category__more" href="services/house-managers.html">More about House Managers &rarr;</a>
+          </div>
         </div>
       </article>
 
@@ -138,7 +209,10 @@ provenance.
         <div class="category__body">
           <h3 class="category__name">Night Nurses</h3>
           <p class="category__desc">Our experienced Night Nurses provide overnight care for new-borns and infants, allowing parents to rest with confidence. They assist with feeding routines, sleep training, monitoring, and overall infant care during night-time hours.</p>
-          <a class="category__link" href="#enquire">Enquire about a Night Nurse &rarr;</a>
+          <div class="category__links">
+            <a class="category__link" href="#enquire">Enquire about a Night Nurse &rarr;</a>
+            <a class="category__more" href="services/night-nurses.html">More about Night Nurses &rarr;</a>
+          </div>
         </div>
       </article>
 
@@ -147,7 +221,10 @@ provenance.
         <div class="category__body">
           <h3 class="category__name">Chauffeurs</h3>
           <p class="category__desc">We recruit professional Chauffeurs who offer safe, reliable, and discreet transportation services. Our drivers maintain the highest standards of professionalism, punctuality, and customer service.</p>
-          <a class="category__link" href="#enquire">Enquire about a Chauffeur &rarr;</a>
+          <div class="category__links">
+            <a class="category__link" href="#enquire">Enquire about a Chauffeur &rarr;</a>
+            <a class="category__more" href="services/chauffeurs.html">More about Chauffeurs &rarr;</a>
+          </div>
         </div>
       </article>
 
@@ -156,7 +233,10 @@ provenance.
         <div class="category__body">
           <h3 class="category__name">Babysitters</h3>
           <p class="category__desc">Our trusted Babysitters provide flexible childcare solutions for families requiring occasional, part-time, or emergency childcare support. Every candidate undergoes thorough screening and reference verification.</p>
-          <a class="category__link" href="#enquire">Enquire about a Babysitter &rarr;</a>
+          <div class="category__links">
+            <a class="category__link" href="#enquire">Enquire about a Babysitter &rarr;</a>
+            <a class="category__more" href="services/babysitters.html">More about Babysitters &rarr;</a>
+          </div>
         </div>
       </article>
 
@@ -165,7 +245,10 @@ provenance.
         <div class="category__body">
           <h3 class="category__name">Personal Assistants <span class="category__qualifier">(Home &amp; Office)</span></h3>
           <p class="category__desc">Our Personal Assistants help busy professionals and families manage daily responsibilities, schedules, correspondence, appointments, travel arrangements, and administrative tasks both at home and in the workplace.</p>
-          <a class="category__link" href="#enquire">Enquire about a Personal Assistant &rarr;</a>
+          <div class="category__links">
+            <a class="category__link" href="#enquire">Enquire about a Personal Assistant &rarr;</a>
+            <a class="category__more" href="services/personal-assistants.html">More about Personal Assistants &rarr;</a>
+          </div>
         </div>
       </article>
 
@@ -174,7 +257,10 @@ provenance.
         <div class="category__body">
           <h3 class="category__name">Pet Care Specialists</h3>
           <p class="category__desc">Your pets deserve the highest level of care. We place experienced Pet Care professionals who provide feeding, exercise, grooming support, companionship, and overall wellbeing management for your beloved animals.</p>
-          <a class="category__link" href="#enquire">Enquire about a Pet Care Specialist &rarr;</a>
+          <div class="category__links">
+            <a class="category__link" href="#enquire">Enquire about a Pet Care Specialist &rarr;</a>
+            <a class="category__more" href="services/pet-care-specialists.html">More about Pet Care Specialists &rarr;</a>
+          </div>
         </div>
       </article>
 
@@ -183,7 +269,10 @@ provenance.
         <div class="category__body">
           <h3 class="category__name">Private Chefs</h3>
           <p class="category__desc">Enjoy exceptional dining experiences in the comfort of your home with our skilled Private Chefs. Whether for daily meal preparation, special dietary requirements, family gatherings, or private events, we match you with culinary professionals who meet your preferences.</p>
-          <a class="category__link" href="#enquire">Enquire about a Private Chef &rarr;</a>
+          <div class="category__links">
+            <a class="category__link" href="#enquire">Enquire about a Private Chef &rarr;</a>
+            <a class="category__more" href="services/private-chefs.html">More about Private Chefs &rarr;</a>
+          </div>
         </div>
       </article>
 
@@ -192,7 +281,10 @@ provenance.
         <div class="category__body">
           <h3 class="category__name">Tutors &amp; Governesses</h3>
           <p class="category__desc">Our Tutors and Governesses provide personalized educational support, academic guidance, and child development assistance. We carefully select professionals who can help children excel academically while fostering confidence and personal growth.</p>
-          <a class="category__link" href="#enquire">Enquire about a Tutor &rarr;</a>
+          <div class="category__links">
+            <a class="category__link" href="#enquire">Enquire about a Tutor &rarr;</a>
+            <a class="category__more" href="services/tutors-governesses.html">More about Tutors &amp; Governesses &rarr;</a>
+          </div>
         </div>
       </article>
     </section>
@@ -486,6 +578,7 @@ provenance.
           <h4>Start Here</h4>
           <a href="#enquire">Client Staffing Enquiry</a>
           <a href="#apply">Candidate Application</a>
+          <a href="faq.html">FAQ</a>
           <a href="privacy.html">Privacy Notice</a>
           <a href="paia-manual.html">PAIA Manual</a>
           <a href="contact.html">Contact Us</a>
