@@ -72,18 +72,27 @@ columns by header name and leaves unknown columns blank).
 
 ## 4. Forms + spreadsheet housekeeping
 
-- Both forms POST to the Apps Script endpoint hardcoded in `src/main.js`.
-  A test submission per form (clearly marked, e.g. Full Name
-  "TEST — safe to delete") should return the success status message on the
-  page and appear as a new row in the matching sheet.
-- Delete test rows afterwards — including the two old
-  "DETECTOR TEST … safe to delete" rows still sitting in the Client
-  Enquiries sheet (noted in DESIGN.md).
+Status as checked on 2026-09-01:
+
 - The two **live** spreadsheets are:
   - Client Staffing Enquiries: `1fc9HJ_2UgPpeT35oPqBZwLHBEuzFFZJDy10NsmbdNdI`
   - Candidate Applications: `19xvTEvzyNXVM2-LmrMZgJUFMUZ7g6-0ymYNv9mnv1nM`
-  Any other spreadsheet in Drive with the same/similar name is a leftover
-  duplicate: rename it "[ARCHIVED] …" and/or move it to an Archive folder so
-  nobody enters data into the wrong one. Do **not** delete the two live IDs.
+  Both sheets' header rows match the site's form field names exactly.
+- **Client form: verified end-to-end** — Faye's own live-site submission of
+  2026-08-25 is in the Client Enquiries sheet. The old "DETECTOR TEST" rows
+  noted in DESIGN.md are already gone. Faye's test row can be deleted once
+  no longer needed.
+- **Candidate form: needs one browser test.** The Candidate Applications
+  sheet has correct headers but no rows yet, so the candidate path has no
+  recent proof. Submit the candidate form once from the live site (Full Name
+  "TEST — safe to delete"), confirm the on-page success message and the new
+  row, then delete the row. (Direct endpoint testing wasn't possible from
+  the build environment — its network policy blocks `script.google.com`.)
+- **Duplicates archived (2026-09-01):** the two leftover 2026-07-16
+  spreadsheets ("Origin Talent – Client Staffing Enquiries" /
+  "– Candidate Applications", old column taxonomy, no real data) were renamed
+  with an "[ARCHIVED — duplicate, superseded 2026-08-18]" prefix. They were
+  deliberately not trashed; trash them from Drive whenever convenient. Do
+  **not** delete the two live IDs above.
 - While in Drive: audit who has access to the two live sheets (PRODUCT.md
   flags this as an open POPIA item) — they hold candidate ID numbers.
