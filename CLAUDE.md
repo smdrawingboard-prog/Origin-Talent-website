@@ -10,7 +10,7 @@ build step, no framework, no package.json. Deployed as-is via GitHub Pages.
 
 Four pages, all hand-written HTML sharing the same masthead/footer markup and
 `src/style.css` / `src/main.js`:
-- `index.html` — the homepage: hero, ten staffing-category cards, the two lead forms
+- `index.html` — the homepage: hero, nine staffing-category cards, the two lead forms
   (Client Staffing Enquiry / Candidate Application), a document-download section.
 - `contact.html`, `privacy.html`, `paia-manual.html` — secondary pages using the
   `.legal` single-column "Read mode" layout (see DESIGN.md) instead of the homepage's

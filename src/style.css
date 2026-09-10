@@ -412,6 +412,12 @@ p { margin: 0; }
 .category:first-of-type { border-top: none; }
 .category.is-visible { opacity: 1; transform: translateY(0) rotate(0deg); }
 .category:nth-of-type(even).is-visible { transition-delay: 0.06s; }
+.category--text {
+  grid-template-columns: 1fr;
+}
+.category--text .category__body {
+  max-width: 42rem;
+}
 
 .category__figure {
   position: relative;
