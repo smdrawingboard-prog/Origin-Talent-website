@@ -6,13 +6,15 @@
 
 **The Tailor's Pattern Book.** Origin Talent measures a household once, precisely, and keeps a pattern book of the professionals fitted to it. Built from a bespoke-tailoring/pattern-drafting register (chosen via the direction round, seed key `5886571f`, assigned index 3), then re-rendered in the user's pinned real brand identity once it surfaced mid-build: grayscale-only, Century Gothic.
 
-## Colors — grayscale base, one brass accent for focal points
+## Colors — grayscale base, brass + navy accents for focal points
 
 - `#f0f0f0` — paper / page background
 - `#474747`, `#444444` — ink (two closely-related dark grays; `#444444` used as primary body/heading ink, `#474747` as secondary/soft)
 - `#ffffff` — white surfaces (cards, form fields)
 - `#1c1c1c` (`--ink-strong`) — an internal extension of the same neutral family for maximum-contrast elements; not a new hue, just a darker value within the pinned grayscale.
-- `#a8752b` (`--accent`) / `#7c561f` (`--accent-strong`) — a single warm brass accent, added per client feedback (Roger, 2026-08-24: "I would enjoy creative bursts of colour"). Deliberately restrained to two tones of one hue rather than a broader palette, and used only at genuine focal/interactive points, not as decoration: the primary CTA fill (`.btn-primary`), the emphasized word in the hero headline (`.hero__title em`), the active pattern-rack tab's border/dot, and each category card's pin marker. `--accent-strong` is used wherever the color sits under body-size text (needs ~4.5:1 against `--paper`, verified); the lighter `--accent` is reserved for larger fills/dots where a 3:1 UI-component contrast is enough. Interactive/active state elsewhere (hover, secondary links) still uses weight, underline, and fill-inversion, not color — so the accent stays legible as "this is the one thing to look at" rather than diffusing across the page.
+- `#a8752b` (`--accent`) / `#7c561f` (`--accent-strong`) — a warm brass accent, added per client feedback (Roger, 2026-08-24: "I would enjoy creative bursts of colour"). Used at focal/interactive points that are NOT the CTA or active nav tab (see navy below, 2026-10-19): the emphasized word in the hero headline (`.hero__title em`), each category card's pin marker. `--accent-strong` is used wherever the color sits under body-size text (needs ~4.5:1 against `--paper`, verified); the lighter `--accent` is reserved for larger fills/dots where a 3:1 UI-component contrast is enough.
+- `#0a1f44` (`--navy`) / `#475773` (`--navy-soft`) — navy blue, added per client feedback (2026-10-19: "apply it to the active nav tab and CTA"), deliberately scoped to only those two spots rather than replacing the brass accent system: the primary CTA fill (`.btn-primary`, white text, ~11:1 contrast) and the active pattern-rack tab's border/dot. `--navy` (the client's exact hex) is the strong/default tone; `--navy-soft` is a derived lighter tint used for hover state and the dot fill, mirroring the brass pair's two-tone pattern.
+- Interactive/active state elsewhere (hover, secondary links) still uses weight, underline, and fill-inversion, not color — so each accent stays legible as "this is the one thing to look at" rather than diffusing across the page.
 
 ## Typography
 
