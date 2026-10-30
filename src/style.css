@@ -5,7 +5,14 @@
    Century Gothic (logo face) with Jost as the free web fallback.
    ============================================================ */
 
-@import url('https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&display=swap');
+/* Jost is self-hosted (assets/fonts, SIL OFL) so no visitor data goes to Google's
+   font servers on page load (POPIA s72 cross-border transfer; 2026-10-30). */
+@font-face { font-family: 'Jost'; font-style: normal; font-weight: 300; font-display: swap; src: url('../assets/fonts/jost-latin-300-normal.woff2') format('woff2'); }
+@font-face { font-family: 'Jost'; font-style: normal; font-weight: 400; font-display: swap; src: url('../assets/fonts/jost-latin-400-normal.woff2') format('woff2'); }
+@font-face { font-family: 'Jost'; font-style: normal; font-weight: 500; font-display: swap; src: url('../assets/fonts/jost-latin-500-normal.woff2') format('woff2'); }
+@font-face { font-family: 'Jost'; font-style: normal; font-weight: 600; font-display: swap; src: url('../assets/fonts/jost-latin-600-normal.woff2') format('woff2'); }
+@font-face { font-family: 'Jost'; font-style: normal; font-weight: 700; font-display: swap; src: url('../assets/fonts/jost-latin-700-normal.woff2') format('woff2'); }
+@font-face { font-family: 'Jost'; font-style: italic; font-weight: 400; font-display: swap; src: url('../assets/fonts/jost-latin-400-italic.woff2') format('woff2'); }
 
 :root {
   --paper: #f0f0f0;
@@ -372,6 +379,7 @@ p { margin: 0; }
 .hero__strip img {
   aspect-ratio: 4 / 5;
   object-fit: cover;
+  object-position: var(--focus, 50% 50%);
   width: 100%;
   height: 100%;
 }
@@ -430,6 +438,7 @@ p { margin: 0; }
 }
 .category__figure img {
   width: 100%;
+  height: auto; /* HTML width/height attrs are ratio hints only — never let them set the box */
   aspect-ratio: 4 / 3;
   object-fit: cover;
   border: 1px solid var(--line);
@@ -928,3 +937,58 @@ p { margin: 0; }
   padding-top: 1.5rem;
   border-top: 1px solid var(--line);
 }
+
+/* ============================================================
+   Cookie & storage consent (POPIA) — 2026-10-30
+   Bottom sheet, equal-weight choices, nothing optional runs before a choice.
+   ============================================================ */
+.consent {
+  position: fixed;
+  inset: auto 0 0 0;
+  z-index: 200;
+  background: var(--white);
+  border-top: 1px solid var(--ink-strong);
+  box-shadow: 0 -8px 28px rgba(28, 28, 28, 0.08);
+  padding: 1.25rem var(--gutter) 1.4rem;
+}
+.consent[hidden] { display: none; }
+.consent__inner {
+  max-width: 72rem;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr auto;
+  gap: 1rem 2.5rem;
+  align-items: center;
+}
+.consent__title {
+  font-family: var(--font-display);
+  font-size: 0.75rem;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  font-weight: 600;
+  color: var(--ink-strong);
+  margin: 0 0 0.4rem;
+}
+.consent__text { font-size: 0.88rem; line-height: 1.55; color: var(--ink); margin: 0; max-width: 68ch; }
+.consent__text a { text-decoration: underline; text-underline-offset: 2px; }
+.consent__actions { display: flex; gap: 0.75rem; flex-wrap: wrap; }
+.consent .btn { padding: 0.75rem 1.4rem; font-size: 0.85rem; min-height: 44px; }
+.consent .btn-primary { animation: none; }
+.btn-outline { background: var(--white); color: var(--ink-strong); }
+.btn-outline:hover { background: var(--paper); }
+.consent__btn:focus-visible, .footer-consent:focus-visible { outline: 2px solid var(--navy); outline-offset: 2px; }
+.footer-consent {
+  background: none; border: 0; padding: 0; cursor: pointer;
+  font: inherit; color: inherit; text-decoration: underline; text-underline-offset: 2px;
+}
+.footer-io { font-size: 0.8rem; color: var(--ink-soft); }
+@media (max-width: 720px) {
+  .consent__inner { grid-template-columns: 1fr; }
+  .consent__actions .btn { flex: 1 1 10rem; justify-content: center; }
+}
+.footer-grid .footer-io a { display: inline; margin: 0; text-decoration: underline; text-underline-offset: 2px; }
+.legal__table-wrap { overflow-x: auto; margin: 0.75rem 0 1rem; }
+.legal__table { width: 100%; border-collapse: collapse; font-size: 0.88rem; min-width: 34rem; }
+.legal__table th, .legal__table td { text-align: left; vertical-align: top; padding: 0.65rem 0.75rem; border-bottom: 1px solid var(--line); }
+.legal__table th { font-size: 0.72rem; letter-spacing: 0.12em; text-transform: uppercase; color: var(--ink-soft); font-weight: 600; border-bottom-color: var(--ink-strong); }
+.legal__table code { font-size: 0.85em; white-space: nowrap; }
