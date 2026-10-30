@@ -51,7 +51,7 @@
 ## Real brand assets in use
 
 - Logo: `assets/brand/origin-talent-{black,white}.{svg,png}` (real files, from the user's OneDrive folder).
-- Photography: `assets/photography/brand/*.png` — real Origin Talent photos for 8 of the original 10 role names (see PRODUCT.md for how these map onto the current 9 merged categories). `assets/photography/sourced/*.jpg` — licensed Pexels placeholders for Private Chefs and Tutors & Governesses only (no real photo exists yet for those two); see `assets/photography/sourced/LICENSES.md`.
+- Photography (2026-10-30, client-supplied): `assets/photography/site/*.jpg` — 10 new photos supplied by the agency via Fate Collab, one per category plus the hero strip, compressed to ≤1600px JPEG with explicit width/height. Bright, airy, navy/stone/white interiors that pick up the site's navy accent. Older sets in `assets/photography/brand/` and `assets/photography/sourced/` are no longer referenced by any page; kept for reference only.
 - Two "brand kit" PDFs found alongside the real assets are confirmed fabricated (different logo, different tagline, invented stats, a fictional staff member) and were not used for anything — see PRODUCT.md Brand Commitments for the full account.
 
 ## Known gaps / next work

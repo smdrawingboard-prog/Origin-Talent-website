@@ -379,6 +379,7 @@ p { margin: 0; }
 .hero__strip img {
   aspect-ratio: 4 / 5;
   object-fit: cover;
+  object-position: var(--focus, 50% 50%);
   width: 100%;
   height: 100%;
 }
@@ -437,6 +438,7 @@ p { margin: 0; }
 }
 .category__figure img {
   width: 100%;
+  height: auto; /* HTML width/height attrs are ratio hints only — never let them set the box */
   aspect-ratio: 4 / 3;
   object-fit: cover;
   border: 1px solid var(--line);
@@ -989,4 +991,4 @@ p { margin: 0; }
 .legal__table { width: 100%; border-collapse: collapse; font-size: 0.88rem; min-width: 34rem; }
 .legal__table th, .legal__table td { text-align: left; vertical-align: top; padding: 0.65rem 0.75rem; border-bottom: 1px solid var(--line); }
 .legal__table th { font-size: 0.72rem; letter-spacing: 0.12em; text-transform: uppercase; color: var(--ink-soft); font-weight: 600; border-bottom-color: var(--ink-strong); }
-.legal__table code { font-size: 0.85em; }
+.legal__table code { font-size: 0.85em; white-space: nowrap; }
