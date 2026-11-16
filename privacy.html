@@ -6,6 +6,7 @@
 <title>Privacy Notice — Origin Talent</title>
 <meta name="description" content="How Origin Talent collects, uses, and protects personal information, in accordance with South Africa's Protection of Personal Information Act (POPIA)." />
 <link rel="stylesheet" href="src/style.css" />
+<script src="src/consent.js" defer></script>
 </head>
 <body>
 
@@ -26,14 +27,15 @@
 <main class="wrap legal">
   <p class="legal__eyebrow">Household &amp; Family Staffing — Johannesburg</p>
   <h1 class="legal__title">Privacy Notice</h1>
-  <p class="legal__updated">Last updated: 20 August 2026. This notice explains how Origin Talent Agency (Pty) Ltd ("Origin Talent," "we," "us") collects, uses, and protects personal information in accordance with the Protection of Personal Information Act, 2013 ("POPIA").</p>
+  <p class="legal__updated">Last updated: 30 October 2026. This notice explains how Origin Talent Agency (Pty) Ltd ("Origin Talent," "we," "us") collects, uses, and protects personal information in accordance with the Protection of Personal Information Act, 2013 ("POPIA").</p>
 
   <hr class="snapline" />
 
-  <section class="legal__section">
+  <section class="legal__section" id="who-we-are">
     <h2>Who we are</h2>
     <p>Origin Talent Agency (Pty) Ltd is a domestic and household staffing recruitment agency based at First Floor, Dainfern Square, Cnr Winnie Mandela &amp; Broadacres Drive, Dainfern, Johannesburg, 2191.</p>
     <p><strong>Information Officer:</strong> Roger Donaldson, Director — <a href="mailto:roger@origintalent.co.za">roger@origintalent.co.za</a> · <a href="tel:+27105020105">+27 10 502 0105</a>. Any question, correction, deletion, or objection request relating to your personal information should be directed here.</p>
+    <p>As Information Officer under section 55 of POPIA, Roger is responsible for how Origin Talent complies with the Act, for handling requests from data subjects, and for working with the Information Regulator. Our <a href="paia-manual.html">PAIA Manual</a> sets out how to request access to records we hold.</p>
   </section>
 
   <section class="legal__section">
@@ -101,9 +103,37 @@
     <p>To exercise any of these, contact our Information Officer above. If you're not satisfied with our response, you have the right to complain to South Africa's Information Regulator: <a href="mailto:complaints.IR@justice.gov.za">complaints.IR@justice.gov.za</a> · <a href="https://www.justice.gov.za/inforeg/" target="_blank" rel="noopener">justice.gov.za/inforeg</a>.</p>
   </section>
 
-  <section class="legal__section">
-    <h2>Cookies and this website</h2>
-    <p>This site itself doesn't set tracking or advertising cookies. It loads a typeface from Google Fonts, which involves a request to Google's servers to serve that font file.</p>
+  <section class="legal__section" id="cookies">
+    <h2>Cookies and similar technologies</h2>
+    <p>Cookies and browser storage are small pieces of information a website saves on your device. Where they can identify you, POPIA treats them as personal information. We keep this to the minimum the site needs, and we don't use advertising or cross-site tracking cookies.</p>
+
+    <h3>What this site stores</h3>
+    <div class="legal__table-wrap">
+      <table class="legal__table">
+        <thead>
+          <tr><th scope="col">Name</th><th scope="col">Type</th><th scope="col">Purpose</th><th scope="col">How long</th></tr>
+        </thead>
+        <tbody>
+          <tr><td><code>ot-consent</code></td><td>Essential &middot; browser local storage</td><td>Remembers the choice you made in our cookie banner, so we don't ask on every page.</td><td>12 months, then we ask again</td></tr>
+          <tr><td><code>ot-splash-seen</code></td><td>Essential &middot; browser session storage</td><td>Shows the opening logo animation once per visit instead of on every page load.</td><td>Deleted when you close the tab</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <p>Neither item contains your name, contact details, or anything you type into our forms, and neither is sent to us or anyone else.</p>
+
+    <h3>Analytics</h3>
+    <p>We don't currently run website analytics. If we add them, they'll stay switched off unless you choose "Allow analytics" in the cookie banner, and we'll update this table first with the provider, what it collects, and how long it's kept.</p>
+
+    <h3>Third parties</h3>
+    <p>Our fonts and images are served from this website itself, so simply viewing a page doesn't send your information to Google or any other third party. When you submit one of our forms, your answers go to Google Workspace (which we use to receive and store enquiries), as explained under "Who sees it" and "Where it's stored" above.</p>
+
+    <h3>Your choices</h3>
+    <ul>
+      <li>Essential storage is needed for the site to work properly and is used under POPIA's legitimate-interest ground (section 11(1)(f)). You can still clear or block it in your browser settings; the site will keep working, but it will ask for your cookie choice again.</li>
+      <li>Optional storage, such as analytics, is used only with your consent (section 11(1)(a)). Consent is never pre-selected, and declining is as easy as accepting.</li>
+      <li>You can change or withdraw your choice at any time: <button type="button" class="footer-consent" data-open-consent>open cookie settings</button>. Withdrawing doesn't affect anything that happened before you changed your mind.</li>
+    </ul>
+    <p>Questions about cookies go to our Information Officer, Roger Donaldson, at <a href="mailto:roger@origintalent.co.za">roger@origintalent.co.za</a>.</p>
   </section>
 
   <section class="legal__section">
@@ -127,6 +157,7 @@
       <a href="tel:+27105020105">+27 10 502 0105</a>
       <a href="mailto:roger@origintalent.co.za">Roger · roger@origintalent.co.za</a>
       <a href="mailto:chipo@origintalent.co.za">Chipo · chipo@origintalent.co.za</a>
+      <p class="footer-io">POPIA Information Officer: Roger Donaldson &middot; <a href="privacy.html#who-we-are">privacy requests</a></p>
       <p>First Floor, Dainfern Square<br />Cnr Winnie Mandela &amp; Broadacres Drive<br />Dainfern, Johannesburg, 2191</p>
     </div>
     <div>
@@ -140,6 +171,7 @@
   </div>
   <div class="footer-bottom">
     <span>&copy; 2026 Origin Talent Agency (Pty) Ltd.</span>
+    <button type="button" class="footer-consent" data-open-consent>Cookie settings</button>
     <span>Johannesburg, South Africa</span>
   </div>
 </footer>

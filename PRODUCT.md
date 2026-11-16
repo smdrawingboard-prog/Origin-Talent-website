@@ -92,3 +92,9 @@ A `/legal:compliance-check` run on 2026-08-20 identified several POPIA gaps (see
 3. **Real people, real service.** Lead with the agency's genuine photography and its actual screening process rather than generic staffing-agency stock imagery or vague claims.
 4. **Category clarity over category overload.** Nine distinct services need to read as scannable and organized, not as an exhausting list.
 5. **Forms are core product, not an afterthought.** The staffing enquiry form, the candidate application, and the downloadable service agreement are the site's primary conversion paths and deserve first-class design, not a bolted-on contact page.
+
+## Update — 2026-10-30
+
+- **Photography replaced.** The agency supplied 10 new photos (au pair, house manager, housekeeper, tutor, night nurse, chauffeur, caregiver, private chef, pet care, personal assistant). All live in `assets/photography/site/` and now drive the hero strip and all eight photo cards. The Pexels placeholders and the earlier brand set are unused. Several backgrounds show Cape Town scenery (Table Mountain) although the agency is in Dainfern, Johannesburg — client to confirm this is acceptable.
+- **Information Officer confirmed.** Faye confirmed Roger Donaldson as Origin Talent's POPIA Information Officer; he's now named in every footer, on the Contact page, and in the Privacy Notice/PAIA Manual. Registering him with the Information Regulator (inforegulator.org.za eServices) is still Roger's own filing — not done by us.
+- **Cookies & consent.** `src/consent.js` adds a POPIA consent banner (essential-only default, equal-weight choices, 12-month expiry, footer "Cookie settings" to withdraw). The site currently sets no optional cookies; any future analytics must load through `OTConsent.onChange()` and be added to the table at `privacy.html#cookies`. Google Fonts was replaced with self-hosted Jost so viewing the site no longer transfers visitor data to Google.
